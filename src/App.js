@@ -4,6 +4,7 @@ import AboutPage from './page/AboutPage.js';
 import Header from './componenets/Header.js';
 import Footer from './componenets/Footer.js';
 import Quickbutton from './componenets/Quickbutton.js';
+import SignUpForm from './page/SignUpForm';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
          <Route path="/" element={<MainPage />} />
          <Route path="/about" element={<AboutPage />} />
+         <Route path="/signup" element={<SignUpForm />} />
       </Routes>
       <Footer />
       <Quickbutton />

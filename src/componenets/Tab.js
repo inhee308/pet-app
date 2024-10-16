@@ -14,6 +14,20 @@ const Tab = ({tabs, tabData}) => {
                     <button key={tab.value} className={activeTab===tab.value?'active':''} onClick={()=>handleTabClick(tab.value)}>{tab.label}</button>
                     ))}
             </div>
+            <ul className="tabList">
+                {
+                    filterData.map((tablist)=>(
+                        <li key={tablist.id}>
+                            <span className="tab-img">
+                                <img src={tablist.imageUrl} alt="" />
+                            </span>
+                            <div className="tab-description">
+                                {tablist.description}
+                            </div>
+                        </li>
+                    ))
+                }
+            </ul>
         </div>
     );
 };
