@@ -2,6 +2,7 @@ import React from 'react';
 import MainSlider from '../componenets/MainSlider';
 import Best from '../componenets/Best';
 import FreshBox from '../componenets/FreshBox';
+import New from '../componenets/New';
 
 
 const MainPage = () => {
@@ -15,6 +16,9 @@ const MainPage = () => {
          </section>
          <section className='section03'>
             <FreshBox />
+         </section>
+         <section className='section04'>
+            <New />
          </section>
       </div>
    );
